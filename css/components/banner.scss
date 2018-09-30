@@ -5,18 +5,22 @@
     
     box-sizing: border-box;
     padding-top: 2em;
-    padding-bottom: 6em;
+    padding-bottom: 3em;
     
     background-color: $color-black-02;
     background-image: url(../img/keepnote_background.jpg);
     background-position: center center;
     background-size: cover;
     
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5em), 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5em), 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 2em), 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 2em), 0% 100%);
     
     @include mediaMinWidth(50em) {
         min-height: 26em;
+        padding-bottom: 6em;
+        
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5em), 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5em), 0% 100%);
     }
     
     &_text {
