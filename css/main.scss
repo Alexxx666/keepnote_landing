@@ -3,4 +3,35 @@
 @import 'baseline';
 @import 'colors';
 @import 'components/header';
+@import 'components/banner';
 
+.registerButton {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 1em;
+    border-bottom: .2em solid rgba(0, 0, 0, .35);
+    
+    color: $color-white-01;
+    background-color: $color-green-01;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+        
+    &:hover {
+        cursor: pointer;
+        background-color: $color-green-02;
+    }
+    
+// TODO
+//    &:focus {
+//        outline: none;
+//        border-color: $color-green-02;
+//        box-shadow: 0 0 1em $color-green-02;
+//    }
+//    
+//    &:active {
+//        border-color: $color-green-02;
+//        box-shadow: none;
+//    }
+}
