@@ -1,0 +1,10 @@
+@mixin mediaMinWidth($width) {
+  @media (min-width: #{$width}) {
+    @content;
+  }
+}
+
+.limitWidth {
+    max-width: 69em;
+    margin: 0 auto;
+}

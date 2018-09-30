@@ -1,0 +1,63 @@
+.header {
+    box-sizing: border-box;
+    padding: 1em;
+    
+    @include mediaMinWidth(38em) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &_logo {
+        @include mediaMinWidth(38em) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    &_logoImg {
+        display: block;
+        margin: 0 auto;
+        width: 3em;
+        height: 3em;
+        
+        @include mediaMinWidth(38em) {
+            margin: 0 1em 0 0;
+        }
+    }
+    
+    &_headline {
+        margin: .5em 0;
+        text-align: center;
+        
+        font-size: 1.5em;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        color: $color-black-01;
+        
+        span {
+            font-weight: bold;
+            color: $color-gray-blue-01;
+        }
+    }
+    
+    &_links {
+        text-align: center;
+        font-size: 1.25em;
+    }
+    
+    &_link {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: $color-blue-01;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    &_linksSeparator {
+        color: $color-gray-blue-01;
+    }
+} 
