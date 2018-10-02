@@ -412,10 +412,10 @@ body {
         .infoBlocks_block:nth-child(3n) {
           padding-left: 1em; } }
   .infoBlocks_headline {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     color: #77909b;
-    margin-bottom: 1.25em; }
+    margin-bottom: 1em; }
   .infoBlocks_content {
     display: flex; }
   .infoBlocks_blockHeadline {
