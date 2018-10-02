@@ -4,6 +4,7 @@
 @import 'colors';
 @import 'components/header';
 @import 'components/banner';
+@import 'components/infoblocks';
 
 .registerButton {
     padding: 1em 2em;
@@ -15,6 +16,7 @@
     background-color: $color-green-01;
     
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: bold;
     letter-spacing: .1em;
         
@@ -22,16 +24,4 @@
         cursor: pointer;
         background-color: $color-green-02;
     }
-    
-// TODO
-//    &:focus {
-//        outline: none;
-//        border-color: $color-green-02;
-//        box-shadow: 0 0 1em $color-green-02;
-//    }
-//    
-//    &:active {
-//        border-color: $color-green-02;
-//        box-shadow: none;
-//    }
 }
