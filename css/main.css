@@ -444,8 +444,7 @@ body {
     @media (min-width: 50em) {
       .showcase_container {
         flex-direction: row;
-        align-items: center;
-        padding-top: 6em; } }
+        padding-top: 7em; } }
   @media (min-width: 50em) {
     .showcase_pictureWrapper {
       width: 50%; } }
@@ -459,7 +458,7 @@ body {
         padding: 0 2em 2em 1em; } }
   .showcase_content {
     box-sizing: border-box;
-    padding: 0 1em; }
+    padding: 0 1em 1em 1em; }
     @media (min-width: 50em) {
       .showcase_content {
         width: 50%;
@@ -477,6 +476,30 @@ body {
   .showcase_text {
     font-size: 1.25em;
     color: #3a3a3a; }
+
+.callToAction {
+  padding: 2em 0;
+  background-color: #313131; }
+  .callToAction_contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 50em) {
+      .callToAction_contentContainer {
+        flex-direction: row;
+        justify-content: space-between; } }
+  .callToAction_text {
+    margin-top: 0;
+    padding: 0 1rem;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center; }
+    @media (min-width: 50em) {
+      .callToAction_text {
+        margin-bottom: 0; } }
+  @media (min-width: 50em) {
+    .callToAction_button {
+      margin-right: 1em; } }
 
 .registerButton {
   padding: 1em 2em;

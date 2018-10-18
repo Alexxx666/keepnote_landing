@@ -16,8 +16,7 @@
     
     @include mediaMinWidth(50em) {
       flex-direction: row;
-      align-items: center;
-      padding-top: 6em;
+      padding-top: 7em;
     }
   }
   
@@ -40,7 +39,7 @@
     
   &_content {
     box-sizing: border-box;
-    padding: 0 1em;
+    padding: 0 1em 1em 1em;
     
     @include mediaMinWidth(50em) {
       width: 50%;

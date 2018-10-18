@@ -1,0 +1,33 @@
+.callToAction {
+  padding: 2em 0;
+  background-color: $color-black-04;
+  
+  &_contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include mediaMinWidth(50em) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  &_text {
+    margin-top: 0;
+    padding: 0 1rem;
+    color: $color-white-01;
+    font-size: 1.5em;
+    text-align: center;
+    
+    @include mediaMinWidth(50em) {
+      margin-bottom: 0;
+    }
+  }
+  
+  &_button {
+    @include mediaMinWidth(50em) {
+      margin-right: 1em;
+    }
+  }
+}
