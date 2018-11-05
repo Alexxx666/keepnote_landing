@@ -1,0 +1,10 @@
+.footer{
+  background-color: $color-black-04;
+  padding: 2em 0;
+  
+  &_content {
+    color: white;
+    text-align: center;
+    padding: 0 1em;
+  }
+}

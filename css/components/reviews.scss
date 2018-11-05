@@ -1,0 +1,142 @@
+.reviews {
+  position: relative;
+  
+  &_heading {
+    color: $color-black-03;
+    font-size: 1.5em;
+    text-align: center;
+    
+    @include mediaMinWidth(60em) {
+      font-size: 2em;
+      margin: 1.25em 0;
+    }
+  }
+  
+  &_fakeBackground {
+    @include mediaMinWidth(60em) {
+      position: absolute;
+      top: calc(2em + 2 * 1.4em + 2 * 1.25em * 2em);
+      height: 8.625em;
+      background-color: $color-gray-01;
+      z-index: -1;
+      width: 100%;
+    }
+  }
+  
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    @include mediaMinWidth(60em) {
+      flex-direction: row;
+    }
+  }
+}
+
+.review {
+  padding-bottom: 1em;
+  
+  @media (min-width: 36em) and (max-width: calc(60em - 1px)) {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @include mediaMinWidth(60em) {
+    display: block;
+    width: 33.333333%;
+  }
+  
+  &_header {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: $color-gray-01;
+    padding: 1em;
+    height: auto;
+    
+    @media (min-width: 36em) and (max-width: calc(60em - 1px)) {
+      background-color: $color-white-01;
+      min-width: 35%;
+    }
+  }
+  
+  &_figure {
+    margin: 0 1em 0 0;
+  }
+  
+  &_image {
+    display: block;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+  }
+  
+  &_name {
+    margin: 0 0 .5em 0;
+    font-size: 1.25em;
+    color: $color-black-01;
+  }
+  
+  &_jobTitle {
+    color: $color-gray-02;
+    margin: 0 0 .5em 0;
+  }
+  
+  &_link {
+    display: inline-block;
+    margin-right: .25em;
+    line-height: 1;
+    height: 2em;
+  }
+  
+  &_linkImg {
+    width: 2em;
+    height: 2em;
+  }
+  
+  &_text {
+    color: $color-white-01;
+    background-color: $color-blue-01;
+    padding: 1em;
+    margin: 2em 1em 1em 1em;
+    border-radius: 1em;
+    position: relative;
+    
+    &:before {
+      content: "";
+      border-style: solid;
+      border-width: 0 .75em 1em .75em;
+      border-color: transparent transparent $color-blue-01 transparent;
+      position: absolute;
+      top: -.75em;
+      left: 2.5em;
+      
+      @media (min-width: 36em) and (max-width: calc(60em - 1px)) {
+        top: 3em;
+        left: -1em;
+        border-color: transparent $color-blue-01 transparent transparent;
+        border-width: .75em 1em .75em 0;
+      }
+    }
+
+    &-backgroundGray {
+      background-color: $color-gray-blue-01;
+      
+      &:before {
+        border-color: transparent transparent $color-gray-blue-01 transparent;
+        
+        @media (min-width: 36em) and (max-width: calc(60em - 1px)) {
+          border-color: transparent $color-gray-blue-01 transparent transparent;
+        }
+      }
+    }
+    
+    @media (min-width: 36em) and (max-width: calc(60em - 1px)) {
+      margin: 0 1em 0 2em;
+    }
+    
+    @include mediaMinWidth(60em) {
+      min-height: 7em;
+    }
+  }
+}
