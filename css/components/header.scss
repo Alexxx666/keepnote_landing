@@ -18,8 +18,8 @@
     &_logoImg {
         display: block;
         margin: 0 auto;
-        width: 3em;
-        height: 3em;
+        width: 4em;
+        height: 4em;
         
         @include mediaMinWidth(38em) {
             margin: 0 1em 0 0;
